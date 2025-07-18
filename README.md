@@ -8,20 +8,33 @@ This tool streamlines the process of polymer and material characterization for F
 2. Fitting Prony-series parameters (relaxation moduli and times) from DMA data
 3. Visualizing shift factors, storage/loss moduli, and fitted curves
 
+# Clone the repository
+git clone https://github.com/yourusername/viscoprony.git
+
+# Navigate into the project folder
+cd viscoprony
+
+# Install in editable/development mode
+pip install -e .
+
 # Visualizations
 
-## Storage and Loss Moduli
-Raw DMA curves showing \(E'\) (storage modulus) and \(E''\) (loss modulus).
-![Storage and Loss Moduli](./docs/images//StorageLossCurves.png)
+**Shift Factors vs Temperature**: Logarithmic shift factors $a_T$ calculated from DMA data. 
+<p align="center">
+  <img src="./docs/images/ShiftfactorVsTemperatures.png" alt="Shift Factors" width="70%">
+</p>
 
-## Shift Factors vs Temperature
-Logarithmic shift factors (\(a_T\)) calculated from DMA data.
-![Shift Factors](./docs/images/ShiftfactorVsTemperatures.png)
+**Storage and Loss Moduli**: Raw DMA curves showing $E'$ (storage modulus) and $E''$  (loss modulus).
+<p align="center">
+  <img src="./docs/images/StorageLossCurves.png" alt="Storage and loss moduli curves from DMA data" width="70%">
+</p>
 
-## Master Curve
-Constructed master curve showing the material’s behavior over a wide frequency range.
-![Master Curve](./docs/images//MasterCurve.png)
+**Master Curve**: Constructed master curve showing the material’s behavior over a wide frequency range.
+<p align="center">
+  <img src="./docs/images/MasterCurve.png" alt="Master curve of viscoelastic material" width" width="70%">
+</p>
 
-## Prony-Series Fit
-Fitted Prony-series overlaying the master curve for validation.
-![Prony Fit](./docs/images//PronyseriesFit.png)
+**Prony-Series Fit**: Fitted Prony-series overlaying the master curve for validation.
+<p align="center">
+  <img src="./docs/images/PronyseriesFit.png" alt="Prony-series fit on master curve" width" width="70%">
+</p>
