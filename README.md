@@ -9,17 +9,22 @@ This tool streamlines the process of polymer and material characterization for F
 3. Visualizing shift factors, storage/loss moduli, and fitted curves
 
 # Installation
-The program can be installed by cloning **viscoprony** onto your local machine from the git repository using the following command
+Install **viscoprony** by cloning the repository onto your local machine using the following command
 
     git clone https://github.com/yourusername/viscoprony.git
 
+**Dependencies**
+
+Required Python packages are listed in `requirements.txt`. Install them with:  
+
+    pip install -r requirements.txt
+
 # Getting started
 This package is intended to be run through a Python IDE (PyCharm, VSCode, Spyder, etc.).  
-You can edit parameters directly in `__main__.py` and run the script.  
 
 **Data Placement**
 
-Your DMA data file should be of type "yourname".txt and be placed in the `Data/` folder of the repository.
+Place your DMA data file (e.g., yourfile.txt) in the Data/ folder of the repository.
 
 **Data file and structure**
 
@@ -42,6 +47,8 @@ The data file must be comma-separated and contain the following columns:
 
 **Example Workflow in `__main__.py`**
 
+You can edit parameters directly in the main script.  
+
 ```python
 ## Load in packages
 import numpy as np
@@ -54,7 +61,7 @@ from PythonFunctions.PlottingFunctions.plotting_functions import plot_shiftfacto
 from PythonFunctions.OutputFunctions.output_functions import numpysavetxt
 
 ## Load in values
-values = np.loadtxt('Data/"yourname.txt', delimiter=',')
+values = np.loadtxt('Data/<yourfile>.txt', delimiter=',')
 
 ## Set X, Y1, Y2, Z
 X  = values[:, 0] # Frequencies [rad/s] (converted from Hz later)
@@ -90,3 +97,16 @@ f1, f2 = 10**(-24), 10**24  # Frequencies between 10⁻²⁴ and 10²⁴ [1/s]
 <p align="center">
   <img src="./docs/images/PronyseriesFit.png" alt="Prony-series fit on master curve" width="70%">
 </p>
+
+# Output Files
+
+| File Name                               | Description                                |
+|-----------------------------------------|--------------------------------------------|
+| PronySeriesCoefficientsDMTA.txt         | Fitted Prony-series parameters            |
+| ShiftFactorsDMTA.txt                    | Temperature shift factors (a_T)           |
+| ShiftedDataDMTA.txt                     | Shifted DMA data for master curve         |
+| StorageLossCurves.png                   | Plot of raw storage and loss moduli       |
+| MasterCurve.png                         | Constructed master curve                  |
+| ShiftfactorVsTemperatures.png           | Shift factors vs. temperatures plot       |
+| PronyseriesFit.png                      | Fitted Prony-series over master curve     |
+
