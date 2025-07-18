@@ -16,12 +16,12 @@ Logarithmic shift factors (\(a_T\)) calculated from DMA data.
 
 ## Storage and Loss Moduli
 Raw DMA curves showing \(E'\) (storage modulus) and \(E''\) (loss modulus).
-![Storage and Loss Moduli](./StorageLossCurves.png)
+![Storage and Loss Moduli](./docs/images//StorageLossCurves.png)
 
 ## Master Curve
 Constructed master curve showing the material’s behavior over a wide frequency range.
-![Master Curve](./MasterCurve.png)
+![Master Curve](./docs/images//MasterCurve.png)
 
 ## Prony-Series Fit
 Fitted Prony-series overlaying the master curve for validation.
-![Prony Fit](./PronyseriesFit.png)
+![Prony Fit](./docs/images//PronyseriesFit.png)
