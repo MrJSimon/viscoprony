@@ -10,13 +10,13 @@ This tool streamlines the process of polymer and material characterization for F
 
 # Visualizations
 
-## Shift Factors vs Temperature
-Logarithmic shift factors (\(a_T\)) calculated from DMA data.
-![Shift Factors](./docs/images/ShiftfactorVsTemperatures.png)
-
 ## Storage and Loss Moduli
 Raw DMA curves showing \(E'\) (storage modulus) and \(E''\) (loss modulus).
 ![Storage and Loss Moduli](./docs/images//StorageLossCurves.png)
+
+## Shift Factors vs Temperature
+Logarithmic shift factors (\(a_T\)) calculated from DMA data.
+![Shift Factors](./docs/images/ShiftfactorVsTemperatures.png)
 
 ## Master Curve
 Constructed master curve showing the material’s behavior over a wide frequency range.
