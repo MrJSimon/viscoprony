@@ -9,7 +9,7 @@ This tool streamlines the process of polymer and material characterization for F
 3. Visualizing shift factors, storage/loss moduli, and fitted curves
 
 # Clone the repository
-git clone https://github.com/yourusername/viscoprony.git
+git clone [https://github.com/yourusername/viscoprony.git](https://github.com/MrJSimon/viscoprony.git)
 
 # Navigate into the project folder
 cd viscoprony
