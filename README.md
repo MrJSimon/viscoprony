@@ -78,14 +78,14 @@ f1, f2 = 10**(-24), 10**24  # Frequencies between 10⁻²⁴ and 10²⁴ [1/s]
 
 # Visualizations
 
-**Shift Factors vs Temperature**: Logarithmic shift factors $a_T$ calculated from DMA data. 
-<p align="center">
-  <img src="./docs/images/ShiftfactorVsTemperatures.png" alt="Shift Factors" width="70%">
-</p>
-
 **Storage and Loss Moduli**: Raw DMA curves showing $E'$ (storage modulus) and $E''$  (loss modulus).
 <p align="center">
   <img src="./docs/images/StorageLossCurves.png" alt="Storage and loss moduli curves from DMA data" width="70%">
+</p>
+
+**Shift Factors vs Temperature**: Logarithmic shift factors $a_T$ calculated from DMA data. 
+<p align="center">
+  <img src="./docs/images/ShiftfactorVsTemperatures.png" alt="Shift Factors" width="70%">
 </p>
 
 **Master Curve**: Constructed master curve showing the material’s behavior over a wide frequency range.
