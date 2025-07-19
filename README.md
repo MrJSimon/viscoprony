@@ -110,3 +110,6 @@ f1, f2 = 10**(-24), 10**24  # Frequencies between 10⁻²⁴ and 10²⁴ [1/s]
 | ShiftfactorVsTemperatures.png           | Shift factors vs. temperatures plot       |
 | PronyseriesFit.png                      | Fitted Prony-series over master curve     |
 
+
+# Documentation
+For more details, visit the [Wiki](https://github.com/MrJSimon/viscoprony/wiki).
