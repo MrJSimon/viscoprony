@@ -20,7 +20,7 @@ from PythonFunctions.PlottingFunctions.plotting_functions import plot_shiftfacto
 from PythonFunctions.OutputFunctions.output_functions import numpysavetxt
 
 ## Load in values
-values = np.loadtxt('Data/output_file_1.txt',delimiter = ',')
+values = np.loadtxt('Data/data_file_1.txt',delimiter = ',')
 
 ## Set X, Y1, Y2, Z
 X  = values[:, 0] # Frequencies [rad/s] (converted from Hz later)
